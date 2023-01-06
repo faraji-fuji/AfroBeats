@@ -25,7 +25,7 @@ include("connect.php")
 			<img src="images/logo.png" alt="html logo" Width="90">
 			<a href="./index.php">
 				<h3 class="disc">
-					Disover Afrobeats
+					Discover Afrobeats
 				</h3>
 			</a>
 			<nav class="sticky">
