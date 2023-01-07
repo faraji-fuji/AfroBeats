@@ -15,19 +15,16 @@ if ($conn->connect_error) {
 function create_database()
 {
     global $conn;
-
     $sql = "CREATE DATABASE music";
-
     if ($conn->query($sql) === TRUE) {
-        echo "Database created successfuly.";
+        // echo "Database created successfuly.";
     } else {
-        echo "Error creatig database" . $conn->error;
+        // echo "Error creatig database" . $conn->error;
     }
 }
 
 // create database if running site for the first time
-// create_database();
-
+create_database();
 
 // create connection
 $conn = new mysqli($server_name, $user_name, $password, $dbname);
@@ -36,7 +33,6 @@ $conn = new mysqli($server_name, $user_name, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: ") . $conn->error;
 }
-
 
 // models representing database tables
 include("models.php");

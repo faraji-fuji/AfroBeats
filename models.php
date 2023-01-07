@@ -310,7 +310,7 @@ class TestimonialModel extends Model
 			`comment`
 		) VALUES(
 			'$name',
-			'$comment',
+			'$comment'
 		)";
 
 		if ($conn->query($sql)) {
@@ -321,6 +321,15 @@ class TestimonialModel extends Model
 		}
 
 		$conn->close();
+	}
+
+	// read
+	function fetch_testimonials()
+	{
+		global $conn;
+		$sql = "SELECT * FROM `testimonial` ORDER BY `id` DESC LIMIT 10";
+		$result = $conn->query($sql);
+		return $result;
 	}
 
 	// update model

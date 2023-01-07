@@ -32,6 +32,16 @@ include("connect.php");
     <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
 
+<!-- js utility functions -->
+<script>
+    function redirect_user(page) {
+        window.location.assign(page);
+    }
+
+    function send_alert(message) {
+        window.alert(message);
+    }
+</script>
 
 <body class="g-sidenav-show  bg-gray-100">
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">

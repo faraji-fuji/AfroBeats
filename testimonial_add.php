@@ -11,7 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // save data
     $testimonialmodel = new TestimonialModel();
     $testimonialmodel->insert($data);
+    echo "<script> send_alert('Testimonial Sent Successfuly')</script>";
 }
+
+
 
 ?>
 

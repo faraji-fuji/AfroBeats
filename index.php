@@ -10,7 +10,7 @@
 	<h3>Sign in for exclusive pictures and great music sugestions</h3>
 </main>
 
-<button class="pulse-button-hover" onclick="window.location.href = 'sign.php';">Sign in</button>
+<button class="pulse-button-hover" onclick="window.location.href = 'login.php';">Sign in</button>
 
 <?php include "footer.php"; ?>
 <!--to open the checkout page once the 'order' button is clicked'-->
