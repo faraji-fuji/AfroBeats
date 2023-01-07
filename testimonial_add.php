@@ -14,8 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     echo "<script> send_alert('Testimonial Sent Successfuly')</script>";
 }
 
-
-
 ?>
 
 <section>

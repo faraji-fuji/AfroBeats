@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-
 <?php include "header.php"; ?>
 
 <main>
@@ -13,6 +9,3 @@
 <button class="pulse-button-hover" onclick="window.location.href = 'login.php';">Sign in</button>
 
 <?php include "footer.php"; ?>
-<!--to open the checkout page once the 'order' button is clicked'-->
-
-</html>

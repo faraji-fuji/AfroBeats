@@ -34,9 +34,3 @@ TrackModel::up();
 TrackModel::seed();
 ContactModel::up();
 TestimonialModel::up();
-
-
-
-// TrackModel::down();
-// TrackModel::up();
-// TrackModel::seed();
