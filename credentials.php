@@ -1,7 +1,7 @@
 <?php
 // goorm
 $server_name = "localhost";
-$user_name = "phpmyadmin";
+$user_name = "root";
 $password = "root";
 $dbname = "music";
 
