@@ -1,6 +1,9 @@
 <?php
 include "header.php";
 
+// controller
+
+
 /**
  * login($email): login logic for matching email
  * 
@@ -13,15 +16,9 @@ function login($email)
 	// fetch and save user data in session
 	$_SESSION['user_data'] = $usermodel->fetch_user_data($email);
 }
-?>
 
 
-
-
-<?php
-// controller
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
 	$usermodel = new UserModel();
 
 	$email = $_POST['email'];
@@ -29,6 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	if ($usermodel->select_item('password', 'email', $email) === $password) {
 		login($email);
+		if ($email == "admin@afrobeats.com") {
+			echo "<script> redirect_user('admin.php') </script>";
+		}
 		echo "<script> redirect_user('dashboard.php') </script>";
 	} else {
 		echo "<script> send_alert('Incorrect Username or Password') </script>";
@@ -36,6 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>
+
+<!-- view -->
+
 <!-- Form for sign in-->
 <p> Please enter in your information:</p>
 <form method="POST" action="login.php">
@@ -52,8 +55,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 
 <?php include "footer.php"; ?>
-
-
-
-
-</html>

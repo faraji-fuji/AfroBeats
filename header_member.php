@@ -77,11 +77,11 @@ include("connect.php");
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./lists.php">
+                    <a class="nav-link text-white " href="./tracks.php">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Lists</span>
+                        <span class="nav-link-text ms-1">Tracks</span>
                     </a>
                 </li>
 

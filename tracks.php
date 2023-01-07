@@ -25,17 +25,11 @@
                                 <tbody>
 
                                     <?php
+                                    $track_model = new TrackModel();
+                                    $tracks = $track_model->fetch_tracks();
 
-                                    $tracks = [
-                                        "Adekunle Gold - Sinner",
-                                        "Burna Boy - Ye",
-                                        "Davido - Fall",
-                                        "Joeboy - Baby",
-                                        "Mr Eazy - Leg Over"
-                                    ];
-
-                                    foreach ($tracks as $track) {
-
+                                    for ($i = 0; $i < $tracks->num_rows; $i++) {
+                                        $track = $tracks->fetch_assoc();
                                     ?>
                                         <tr>
                                             <td>
@@ -44,17 +38,17 @@
                                                         <img src="images/logo.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm"><?= $track ?></h6>
-                                                        <!-- <p class="text-xs text-secondary mb-0">john@creative-tim.com</p> -->
+                                                        <h6 class="mb-0 text-sm"><?= $track['name'] ?></h6>
+                                                        <p class="text-xs text-secondary mb-0"><?= $track['artiste'] ?></p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <!-- <p class="text-xs font-weight-bold mb-0">Manager</p> -->
+                                                <p class="text-xs font-weight-bold mb-0"><?= $track['album'] ?></p>
                                                 <!-- <p class="text-xs text-secondary mb-0">Organization</p> -->
                                             </td>
                                             <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Like</span>
+                                                <span class="btn btn-sm bg-gradient-success">Like</span>
                                             </td>
                                         </tr>
 
