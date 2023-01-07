@@ -22,7 +22,7 @@ include("connect.php")
 <body>
 	<header class="header">
 		<figure class="logos">
-			<img src="images/logo.png" alt="html logo" Width="90">
+			<img src="assets/img/logo.png" alt="html logo" Width="90">
 			<a href="./index.php">
 				<h3 class="disc">
 					Discover Afrobeats

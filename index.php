@@ -1,7 +1,7 @@
 <?php include "header.php"; ?>
 
 <main>
-	<figure class="spirit"><img src="images/spirit.jpg" alt="spirit" /></figure>
+	<figure class="spirit"><img src="assets/img/spirit.jpg" alt="spirit" /></figure>
 	<h2 class="main">Discover new music, artists or browse through exclusive members only photos of your favourite artists.</h2>
 	<h3>Sign in for exclusive pictures and great music sugestions</h3>
 </main>
