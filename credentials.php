@@ -1,6 +1,5 @@
 <?php
-// goorm
-$server_name = "localhost";
+$server_name = "host.docker.internal";
 $user_name = "root";
 $password = "root";
 $dbname = "music";
